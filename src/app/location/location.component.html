@@ -1,0 +1,20 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <h1 >Add location</h1>
+    <form [formGroup]="form" (ngSubmit)="locationFormSubmit()">
+      <input type="text" id="locationName" class="fadeIn second form-control" name="locationName" placeholder="Location name" required autofocus formControlName="locationName">
+      <div class="error-message" *ngIf="error">
+        {{ error }}
+      </div>
+      <input type="submit" class="fadeIn fourth" value="Find locations">
+    </form>
+    <div *ngIf="locations.length !== 0">
+      <h2>Choose location</h2> 
+      <div *ngFor="let location of locations" class="allign-left">
+        <input type="radio" [(ngModel)]="radioSelected" value="{{location.longDescription}}" (change)="onItemChange(location)">
+        <h3>{{location.longDescription}}</h3>
+      </div>
+      <input type="button" class="fadeIn fourth" value="ADD" (click)="onAddLocation()">
+    </div>
+  </div>
+</div>

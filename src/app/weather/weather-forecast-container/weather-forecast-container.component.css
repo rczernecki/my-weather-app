@@ -1,0 +1,17 @@
+.weather-forecast-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: "flex-start";
+  align-content: "flex-start";
+}
+
+app-weather-forecast {
+  width: 500px;
+  height: 150px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

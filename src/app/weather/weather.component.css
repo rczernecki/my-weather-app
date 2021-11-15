@@ -1,0 +1,11 @@
+.weather-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.btn {
+  margin-left: 5px;
+  margin-right: 5px;
+}

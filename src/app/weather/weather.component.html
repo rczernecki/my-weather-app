@@ -1,0 +1,7 @@
+<div class="weather-navbar">
+    <div>
+        <button class="btn" (click)="navigateToLocationForm()">ADD LOCATION</button>
+        <button class="btn" (click)="switchDeletionMode($event)">ENABLE DELETION</button>
+    </div>
+</div>
+<app-weather-forecast-container [weatherForecastTable]="weatherForecastTable" [deletionMode]="deletionMode" (locationDeleted)="onDeleteLocation($event)"></app-weather-forecast-container>

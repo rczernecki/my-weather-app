@@ -1,0 +1,12 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+       <input type="email" id="inputEmail" class="fadeIn second form-control" name="login" placeholder="e-mail" required autofocus formControlName="email">
+       <input type="password" id="inputPassword" class="fadeIn third form-control" name="password" placeholder="password" required formControlName="password">
+       <div class="error-message" *ngIf="error">
+        {{ error }}
+      </div>
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+  </div>
+</div>

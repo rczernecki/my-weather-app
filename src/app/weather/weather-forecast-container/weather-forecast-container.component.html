@@ -1,0 +1,4 @@
+<div class="weather-forecast-container">
+    <app-weather-forecast *ngFor="let weatherForecast of weatherForecastTable" [weatherForecast]="weatherForecast" [deletionMode]="deletionMode"
+        (locationDeleted)="onDeleteLocation($event)"></app-weather-forecast>
+</div>

@@ -1,0 +1,22 @@
+.topnav-right {
+  float: right;
+}
+
+.topnav a {
+  text-align: center;
+  padding: 15px;
+  font-size: 17px;
+}
+
+.topnav {
+  padding: 10px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
