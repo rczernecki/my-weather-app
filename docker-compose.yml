@@ -1,0 +1,10 @@
+version: "3"
+services:
+  ui:
+    build: .
+    ports:
+      - "6505:80"
+    tty: true
+    expose:
+      - "80"
+    stdin_open: true
